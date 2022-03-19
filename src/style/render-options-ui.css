@@ -1,3 +1,7 @@
+/**
+    Control UI for render options
+*/
+
 @media print {
     .render-options { display: none }
 }
@@ -16,6 +20,11 @@
     font-family: monospace, 'DejaVu Sans Mono';
     font-size: 14pt;
     text-align: center;
+}
+
+.render-options h2 {
+    margin-top: 10pt;
+    margin-bottom: 16pt;
 }
 
 .render-options fieldset {

@@ -64,12 +64,18 @@ body {
 .page-body p {
     margin: 0;
     text-align: justify;
-    /* text-justify: distribute; */
     text-align-last: left;
     text-indent: 16pt;
     line-height: 22pt;
     font-size: 18pt;
+    /* text-justify: distribute; */
 }
+
+
+.page-body p.transition {
+    text-indent: 0;
+}
+
 
 .page-body p + p {
     margin-top: 0pt;
