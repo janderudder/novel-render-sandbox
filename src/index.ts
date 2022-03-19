@@ -1,5 +1,14 @@
+import { RenderOptionsUI } from './RenderOptionsUI'
 
-function setupRenderOptionsUi(renderOptionsNode: HTMLElement): void
+document.addEventListener('DOMContentLoaded', () =>
 {
-
-}
+    const renderOptNode = document.getElementById('render-options')
+    if (renderOptNode) {
+        new RenderOptionsUI(renderOptNode,
+            ['p', '.page-body p'],
+            ['h1', '.page-body h1'],
+            ['pSeq', '.page-body p + p'],
+            ['pageBody', '.page-body']
+        )
+    }
+})
