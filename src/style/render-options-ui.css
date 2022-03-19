@@ -1,0 +1,52 @@
+@media print {
+    .render-options { display: none }
+}
+
+.render-options {
+    position: absolute; top: 0; left: 0;
+    width: 260px;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: 3px 3px 12px 0px lightgray;
+    font-family: 'DejaVu Sans Mono';
+}
+
+.render-options * {
+    font-family: 'DejaVu Sans Mono';
+    text-align: center;
+}
+
+.render-options fieldset {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    margin-bottom: 6px;
+    padding: 10px 16px;
+}
+
+.render-options fieldset legend {
+    padding: 2px 12px;
+}
+
+.render-options input[type="number"] {
+    text-align: right;
+    min-width: 64px;
+}
+
+
+.render-options .multi-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.render-options .multi-options-column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.render-options .multi-options-column * {
+    margin-bottom: 2px;
+}

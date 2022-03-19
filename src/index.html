@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/novel-render.css">
+    <link rel="stylesheet" href="style/render-options-ui.css">
+    <script type="module" src="index.ts"></script>
+    <title>Novel Render Experiment</title>
+</head>
+<body>
+    <div class="render-options">
+        <fieldset>
+            <legend>font</legend>
+            <select name="selectFont" id="selectFont">
+                <option value="Baskerville">Baskerville</option>
+                <option value="Cambria">Cambria</option>
+                <option value="'DejaVu Serif'">DejaVu Serif</option>
+                <option value="Garamond">Garamond</option>
+                <option value="serif">serif</option>
+                <option value="Times">Times</option>
+                <option value="'Times New Roman'">Times New Roman</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>justify algorithm</legend>
+            <select name="selectJustify" id="selectJustify">
+                <option value="auto">auto</option>
+                <option value="none">none</option>
+                <option value="inter-character">inter-character</option>
+                <option value="inter-word">inter-word</option>
+                <option value="distribute">distribute (*)</option>
+                <option value="distribute-all-lines">distribute-all-lines (*)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>&para; line height</legend>
+            <input type="number" name="numLineHeight" id="numLineHeight" min="0" max="99"> <small>pt</small>
+        </fieldset>
+        <fieldset>
+            <legend>&para; indent</legend>
+            <input type="number" name="numIndent" id="numIndent" min="0" max="99"> <small>pt</small>
+        </fieldset>
+        <fieldset>
+            <legend>&para; top-margin</legend>
+            <input type="number" name="numMarginTop" id="numMarginTop" min="0" max="99"> <small>pt</small>
+        </fieldset>
+        <fieldset class="multi-options">
+            <legend>title margin</legend>
+                <div class="multi-options-column">
+                    <label for="numTitleMarginTop">top</label>
+                    <label for="numTitleMarginBottom">bottom</label>
+                </div>
+                <div class="multi-options-column">
+                    <input type="number" name="numTitleMarginTop" id="numTitleMarginTop" min="0" max="99">
+                    <input type="number" name="numTitleMarginBottom" id="numTitleMarginBottom" min="0" max="99">
+                </div>
+                <div class="multi-options-column">
+                    <small>pt</small>
+                    <small>pt</small>
+                </div>
+        </fieldset>
+    </div>
+
+    <div class="page">
+        <div class="page-body">
+            <h1>The Title is Here</h1>
+            <p>
+                Adipisicing tempor sunt Lorem commodo esse. Proident enim veniam elit aliqua proident pariatur aliquip. Cupidatat adipisicing sunt do ullamco voluptate consequat qui eiusmod commodo. Consectetur proident deserunt nulla commodo irure consectetur nulla non irure mollit aliquip laborum occaecat fugiat. Dolore laboris consectetur commodo irure quis officia nulla pariatur non.
+            </p>
+            <p>
+                Non magna ea Lorem officia ipsum qui nulla aliquip nisi non incididunt aliqua culpa non. Est velit dolore deserunt aliqua non laborum dolore adipisicing eiusmod et. Tempor aute aliqua incididunt pariatur do ut voluptate cillum aliqua. Cillum cupidatat enim excepteur ipsum commodo non irure. Cillum incididunt anim ex nisi occaecat anim enim. Occaecat reprehenderit pariatur do esse sit culpa incididunt mollit.
+                Mollit aliqua officia eiusmod velit pariatur ad velit id eiusmod adipisicing sint. Deserunt sunt ad tempor nisi occaecat sunt voluptate magna elit duis Lorem nisi. Amet amet et anim ut ullamco sint ullamco nisi commodo ad. Aute tempor ut dolore reprehenderit esse nisi dolor.
+            </p>
+            <p>
+                Dolore sunt laborum aute cillum nulla Lorem aute amet. Voluptate tempor ad labore ipsum. Do nisi exercitation do Lorem mollit elit. Sit minim voluptate nostrud esse labore Lorem. Deserunt deserunt commodo irure elit occaecat. Pariatur velit sunt voluptate veniam occaecat reprehenderit magna. Nulla incididunt labore irure ut sunt dolore non reprehenderit tempor ad quis aliqua. Cillum eu proident sunt elit sit aliqua laboris duis commodo quis. Velit voluptate cupidatat veniam consectetur et magna sunt incididunt reprehenderit velit.
+            </p>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-body">
+            <p>
+                Adipisicing tempor sunt Lorem commodo esse. Proident enim veniam elit aliqua proident pariatur aliquip. Cupidatat adipisicing sunt do ullamco voluptate consequat qui eiusmod commodo. Consectetur proident deserunt nulla commodo irure consectetur nulla non irure mollit aliquip laborum occaecat fugiat. Dolore laboris consectetur commodo irure quis officia nulla pariatur non.
+            </p>
+            <p>
+                Non magna ea Lorem officia ipsum qui nulla aliquip nisi non incididunt aliqua culpa non. Est velit dolore deserunt aliqua non laborum dolore adipisicing eiusmod et. Tempor aute aliqua incididunt pariatur do ut voluptate cillum aliqua. Cillum cupidatat enim excepteur ipsum commodo non irure. Cillum incididunt anim ex nisi occaecat anim enim. Occaecat reprehenderit pariatur do esse sit culpa incididunt mollit.
+                Mollit aliqua officia eiusmod velit pariatur ad velit id eiusmod adipisicing sint. Deserunt sunt ad tempor nisi occaecat sunt voluptate magna elit duis Lorem nisi. Amet amet et anim ut ullamco sint ullamco nisi commodo ad. Aute tempor ut dolore reprehenderit esse nisi dolor.
+            </p>
+            <p>
+                Dolore sunt laborum aute cillum nulla Lorem aute amet. Voluptate tempor ad labore ipsum. Do nisi exercitation do Lorem mollit elit. Sit minim voluptate nostrud esse labore Lorem. Deserunt deserunt commodo irure elit occaecat. Pariatur velit sunt voluptate veniam occaecat reprehenderit magna. Nulla incididunt labore irure ut sunt dolore non reprehenderit tempor ad quis aliqua. Cillum eu proident sunt elit sit aliqua laboris duis commodo quis. Velit voluptate cupidatat veniam consectetur et magna sunt incididunt reprehenderit velit.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

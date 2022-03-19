@@ -1,0 +1,15 @@
+{
+    "name": "novel-render-experiment",
+    "version": "1.0.0",
+    "source": [
+        "src/index.html"
+    ],
+    "scripts": {
+        "start": "parcel serve",
+        "build": "parcel build"
+    },
+    "devDependencies": {
+        "parcel": "^2.3.2",
+        "typescript": "^4.6.2"
+    }
+}
