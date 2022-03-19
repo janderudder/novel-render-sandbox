@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="render-options" id="render-options">
+        <h2>Typesetting</h2>
         <fieldset>
             <legend>font</legend>
             <select name="selectFont" id="selectFont">
@@ -23,7 +24,7 @@
                 <option value="'Times New Roman'">Times New Roman</option>
             </select>
         </fieldset>
-        <fieldset>
+        <!-- <fieldset>
             <legend>justify algorithm</legend>
             <select name="selectJustify" id="selectJustify">
                 <option value="auto">auto</option>
@@ -33,18 +34,22 @@
                 <option value="distribute">distribute (*)</option>
                 <option value="distribute-all-lines">distribute-all-lines (*)</option>
             </select>
+        </fieldset> -->
+        <fieldset>
+            <legend>&para; font size</legend>
+            <input type="number" name="numFontSize" id="numFontSize" min="0" max="99" step=0.1> <small>pt</small>
         </fieldset>
         <fieldset>
             <legend>&para; line height</legend>
-            <input type="number" name="numLineHeight" id="numLineHeight" min="0" max="99"> <small>pt</small>
+            <input type="number" name="numLineHeight" id="numLineHeight" min="0" max="99" step=0.1> <small>pt</small>
         </fieldset>
         <fieldset>
             <legend>&para; indent</legend>
-            <input type="number" name="numIndent" id="numIndent" min="0" max="99"> <small>pt</small>
+            <input type="number" name="numIndent" id="numIndent" min="0" max="99" step=0.1> <small>pt</small>
         </fieldset>
         <fieldset>
             <legend>&para; top-margin</legend>
-            <input type="number" name="numMarginTop" id="numMarginTop" min="0" max="99"> <small>pt</small>
+            <input type="number" name="numParaMarginTop" id="numParaMarginTop" min="0" max="99" step=0.1> <small>pt</small>
         </fieldset>
         <fieldset class="multi-options">
             <legend>title margin</legend>
@@ -53,19 +58,19 @@
                     <label for="numTitleMarginBottom">bottom</label>
                 </div>
                 <div class="multi-options-column">
-                    <input type="number" name="numTitleMarginTop" id="numTitleMarginTop" min="0" max="99">
-                    <input type="number" name="numTitleMarginBottom" id="numTitleMarginBottom" min="0" max="99">
+                    <div><input type="number" name="numTitleMarginTop" id="numTitleMarginTop" min="0" max="99" step=0.1> <small>pt</small></div>
+                    <div><input type="number" name="numTitleMarginBottom" id="numTitleMarginBottom" min="0" max="99" step=0.1> <small>pt</small></div>
                 </div>
-                <div class="multi-options-column">
-                    <small>pt</small>
-                    <small>pt</small>
-                </div>
+        </fieldset>
+        <fieldset>
+            <legend>title font size</legend>
+            <input type="number" name="numTitleFontSize" id="numTitleFontSize" min="0" max="99" step=0.1> <small>pt</small>
         </fieldset>
     </div>
 
     <div class="page">
         <div class="page-body">
-            <h1>The Title is Here</h1>
+            <h2>Titre du Chapitre</h2>
             <p>
                 Adipisicing tempor sunt Lorem commodo esse. Proident enim veniam elit aliqua proident pariatur aliquip. Cupidatat adipisicing sunt do ullamco voluptate consequat qui eiusmod commodo. Consectetur proident deserunt nulla commodo irure consectetur nulla non irure mollit aliquip laborum occaecat fugiat. Dolore laboris consectetur commodo irure quis officia nulla pariatur non.
             </p>

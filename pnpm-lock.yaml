@@ -1,10 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/css': ^0.0.33
+  '@types/web': ^0.0.58
   parcel: ^2.3.2
   typescript: ^4.6.2
 
 devDependencies:
+  '@types/css': 0.0.33
+  '@types/web': 0.0.58
   parcel: 2.3.2
   typescript: 4.6.2
 
@@ -699,8 +703,16 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
+  /@types/css/0.0.33:
+    resolution: {integrity: sha512-qjeDgh86R0LIeEM588q65yatc8Yyo/VvSIYFqq8JOIHDolhGNX0rz7k/OuxqDpnpqlefoHj8X4Ai/6hT9IWtKQ==}
+    dev: true
+
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
+    dev: true
+
+  /@types/web/0.0.58:
+    resolution: {integrity: sha512-iNbMrzLcrzGJ0fe3XECOZeQynP6qyEzM9DwwXIudwhCqbiAwRRbMFikErR38oqzUAjBJkgJwUg21WefUduKW7w==}
     dev: true
 
   /abortcontroller-polyfill/1.7.3:
