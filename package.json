@@ -5,8 +5,8 @@
         "src/index.html"
     ],
     "scripts": {
-        "start": "parcel serve",
-        "build": "parcel build"
+        "start": "parcel serve --dist-dir=live/",
+        "build": "parcel build --dist-dir=dist/"
     },
     "devDependencies": {
         "@types/css": "^0.0.33",
