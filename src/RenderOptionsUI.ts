@@ -28,7 +28,7 @@ export class RenderOptionsUI
             const input = rootNode.querySelector(inputId) as HTMLInputElement
             input.value = parseFloat(this.get(rule, property)) as any
             input.addEventListener('input', ev => this.set(
-                rule, property, new CSSUnitValue(ev.target.value, 'pt')
+                rule, property, `${ev.target.value}pt`
             ))
         }
         setupNumberProperty('p', 'font-size', '#numFontSize')
@@ -53,6 +53,12 @@ export class RenderOptionsUI
 
         setupSelectProperty('pageBody', 'font-family', '#selectFont', 'serif')
 
+        const setupToggle =
+            (element: HTMLFormElement, classNames: string[], selectorsToApplyTo: string[]) =>
+        {
+
+        }
+
         /*  If we add back #selectJustify (text-justify algorithm property),
             here is the code to handle this as of yet Firefox only feature.
             if (this.rules['p'].style.justifyText) {
@@ -68,10 +74,10 @@ export class RenderOptionsUI
     }
 
     set(rule, property, value) {
-        this.rules[rule].styleMap.set(property, value)
+        this.rules[rule].style.setProperty(property, value)
     }
 
     get(rule, property) {
-        return this.rules[rule].styleMap.get(property)
+        return this.rules[rule].style.getPropertyValue(property)
     }
 }
