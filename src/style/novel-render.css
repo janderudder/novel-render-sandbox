@@ -86,7 +86,7 @@ body {
     text-indent: 24pt;
     line-height: 22pt;
     font-size: 18pt;
-    /* text-justify: distribute; */
+    text-justify: auto;
 }
 
 

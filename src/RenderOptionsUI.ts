@@ -82,17 +82,10 @@ export class RenderOptionsUI
 
 
         /*  If we add back #selectJustify (text-justify algorithm property),
-            here is the code to handle this as of yet Firefox only feature.
-            if (this.rules['p'].style.justifyText) {
-                setupSelectProperty('p', 'text-justify', '#selectJustify')
-            } else {
-                const justifyTextOption = document.querySelector('#selectJustify') as HTMLElement;
-                if (justifyTextOption['parentNode'] && justifyTextOption['parentNode']['parentNode']) {
-                    justifyTextOption.parentNode.parentNode
-                        .removeChild(justifyTextOption.parentNode)
-                }
+            here is the code to handle this as of yet Firefox only feature. */
+            if (this.rules['p'].style['text-justify']) {
+                setupSelectProperty('p', 'text-justify', '#selectJustify', 'auto')
             }
-        */
     }
 
     set(rule, property, value) {
