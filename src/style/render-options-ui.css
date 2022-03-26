@@ -37,11 +37,17 @@
 
 .render-options fieldset legend {
     padding: 2px 12px;
+    text-align: center;
+}
+
+.render-options input, select, radio, .input-value {
+    font-size: 1.05em;
 }
 
 .render-options input[type="number"] {
-    text-align: right;
+    text-align: center;
     min-width: 64px;
+    max-width: 96px;
 }
 
 

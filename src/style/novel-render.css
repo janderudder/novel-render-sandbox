@@ -20,8 +20,6 @@ body {
 
 .page {
     display: flex;
-    width: 20.95cm;
-    height: 29.7cm; /* alternatively: 21*29.75 */
     margin: 0 auto;
     background-color: white;
 }
@@ -36,10 +34,18 @@ body {
     }
 }
 
+.page.portrait {
+    width: 20.95cm;
+    height: 29.7cm;  /* alternatively, 21*29.75 */
+}
+
+.page.landscape {
+    width: 29.7cm;
+    height: 20.95cm;
+}
+
 
 .page-body {
-    width: 17cm;
-    height: 27cm;
     margin: auto;
     font-family: Garamond;
 }
@@ -48,6 +54,18 @@ body {
     .page-body {
         border: 1px dotted black;
     }
+}
+
+
+.page.portrait .page-body {
+    width: 17cm;
+    height: 27cm;
+}
+
+.page.landscape .page-body {
+    width: 27cm;
+    height: 17cm;
+    column-count: 2;
 }
 
 
@@ -65,7 +83,7 @@ body {
     margin: 0;
     text-align: justify;
     text-align-last: left;
-    text-indent: 16pt;
+    text-indent: 24pt;
     line-height: 22pt;
     font-size: 18pt;
     /* text-justify: distribute; */

@@ -53,11 +53,33 @@ export class RenderOptionsUI
 
         setupSelectProperty('pageBody', 'font-family', '#selectFont', 'serif')
 
-        const setupToggle =
-            (element: HTMLFormElement, classNames: string[], selectorsToApplyTo: string[]) =>
-        {
 
+        const setPagesOrientation = value => {
+            const pages = document.getElementsByClassName('page')
+            for (const page of pages) {
+                page.classList.remove('landscape', 'portrait')
+                page.classList.add(value)
+            }
         }
+
+        setPagesOrientation('portrait') // set default value
+
+
+        /**
+         *  Here is a cleaner way of handling value changes over the whole
+         *  form. We should extend it to all other options too, in a next
+         *  iteration.
+         */
+        const form = document.forms['render-options']
+
+        form.addEventListener('change', ({target}) => {
+            const {name, value} = target;
+            switch (name) {
+                case 'pageOrientation':
+                    setPagesOrientation(value)
+            }
+        })
+
 
         /*  If we add back #selectJustify (text-justify algorithm property),
             here is the code to handle this as of yet Firefox only feature.

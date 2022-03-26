@@ -10,8 +10,19 @@
     <title>Novel Render Sandbox</title>
 </head>
 <body>
-    <div class="render-options" id="render-options">
+    <form name="render-options" class="render-options" id="render-options">
         <h2>Typesetting</h2>
+        <fieldset class="multi-options">
+            <legend>orientation</legend>
+            <div class="multi-options-column"></div>
+                <input type="radio" name="pageOrientation" id="radioPortait" value="portrait" checked>
+                <label class="input-value" for="radioPortait">portrait</label>
+            </div>
+            <div class="multi-options-column"></div>
+                <input type="radio" name="pageOrientation" id="radioLandscape" value="landscape">
+                <label class="input-value" for="radioLandscape">landscape</label>
+            </div>
+        </fieldset>
         <fieldset>
             <legend>font</legend>
             <select name="selectFont" id="selectFont">
@@ -66,9 +77,9 @@
                     <div><input type="number" name="numTitleMarginBottom" id="numTitleMarginBottom" min="0" max="99" step=0.1> <small>pt</small></div>
                 </div>
         </fieldset>
-    </div>
+    </form name="render-options">
 
-    <div class="page">
+    <div class="page portrait">
         <div class="page-body">
             <h2>Titre du Chapitre</h2>
             <p>
@@ -84,7 +95,7 @@
         </div>
     </div>
 
-    <div class="page">
+    <div class="page portrait">
         <div class="page-body">
             <p>
                 Adipisicing tempor sunt Lorem commodo esse. Proident enim veniam elit aliqua proident pariatur aliquip. Cupidatat adipisicing sunt do ullamco voluptate consequat qui eiusmod commodo. Consectetur proident deserunt nulla commodo irure consectetur nulla non irure mollit aliquip laborum occaecat fugiat. Dolore laboris consectetur commodo irure quis officia nulla pariatur non.
